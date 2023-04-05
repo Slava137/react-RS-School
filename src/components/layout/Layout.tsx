@@ -1,14 +1,13 @@
 import { Component } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
+import Header from '../header/Header';
 
 class Layout extends Component {
   render() {
     return (
       <>
-        <header>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-        </header>
+        <Header />
         <Outlet />
       </>
     );

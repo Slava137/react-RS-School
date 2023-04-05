@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "prettier": "prettier --check \"**/*.+(js|cjs|ts|tsx)\"",
-    "prettier:fix": "prettier --write \"**/*.+(js|cjs|ts|tsx)\"",
+    "prettier": "prettier --check \"**/*.+(js|cjs|ts|tsx|css)\"",
+    "prettier:fix": "prettier --write \"**/*.+(js|cjs|ts|tsx|css)\"",
     "test": "vitest"
   },
   "dependencies": {

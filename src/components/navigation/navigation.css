@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 10px 0;
+}
+
+.link {
+  color: #0ea2dd;
+}
+
+.link:hover {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.link_active {
+  color: #fa9107;
+}
