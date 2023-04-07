@@ -39,6 +39,8 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 0,
     'react/prefer-stateless-function': 'off',
+    'react/state-in-constructor': 'off',
+    '@typescript-eslint/ban-types': 'warn',
   },
   settings: {
     react: {

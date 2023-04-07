@@ -3,12 +3,26 @@ import { Component } from 'react';
 import Navigation from '../navigation/Navigation';
 import './header.css';
 
-class Header extends Component {
+type State = {
+  title: string;
+};
+
+class Header extends Component<{}, State> {
+  state = {
+    title: 'Home',
+  };
+
+  handleChangeTitle = (title: string) => {
+    this.setState({ title });
+  };
+
   render() {
+    const { title } = this.state;
+
     return (
       <header className="header wrapper">
-        <p>Page</p>
-        <Navigation />
+        <p>{title}</p>
+        <Navigation onChangeTitle={this.handleChangeTitle} />
       </header>
     );
   }
