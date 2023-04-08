@@ -20,7 +20,7 @@ class Header extends Component<{}, State> {
     const { title } = this.state;
 
     return (
-      <header className="header wrapper">
+      <header className="header">
         <p>{title}</p>
         <Navigation onChangeTitle={this.handleChangeTitle} />
       </header>
